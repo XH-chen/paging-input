@@ -1,0 +1,25 @@
+jQuery插件  引用之前 必须引入jquery
+默认参数：
+{
+	bColor:"green",//点击后input的背景颜色
+	oldColor:"white",//未点击前input的颜色
+	textColor:"white",//点击后input文本颜色
+	oldtxtColor:"#767C8A",//未点击前input文本颜色
+	len:10,//input的显示个数
+	max:50,//input的最大个数
+	btncallback:function(data){},//input的点击执行函数，data为每个input的文本内容
+	cssparent:""//css样式的位置，没有设置则为同个文档之下
+}
+设置参数：{
+	根据上方注释可以设置不同的参数
+}
+示例：
+$("#box").fullbtn({
+	bColor:"green",
+	oldColor:"yellow",
+	len:10,
+	max:29,
+	btncallback:function(data){
+		console.log(data);
+	}
+})
